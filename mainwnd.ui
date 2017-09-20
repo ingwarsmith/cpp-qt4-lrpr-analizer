@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWnd</class>
+ <widget class="QMainWindow" name="MainWnd">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWnd</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuExportImport">
+    <property name="title">
+     <string>Экспорт/Импорт</string>
+    </property>
+    <addaction name="actionBaseDataImport"/>
+    <addaction name="actionWellDataImport"/>
+    <addaction name="separator"/>
+    <addaction name="actionCurrentElementExprort"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="actionRemoveCurrentStructureFromProject"/>
+    <addaction name="actionRemoveCurrentTrapFromProject"/>
+    <addaction name="actionRemoveCurrentStratumFromProject"/>
+    <addaction name="actionRemoveCurrentWellFromProject"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="actionCreateEmptyProject"/>
+    <addaction name="actionOpenProject"/>
+    <addaction name="actionSaveCurrentProject"/>
+    <addaction name="actionSaveCurrentProjectAs"/>
+    <addaction name="actionSaveAllOpenedProjects"/>
+    <addaction name="separator"/>
+    <addaction name="actionCloseCurrentProject"/>
+    <addaction name="actionCloseAllOpenedProjects"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuExportImport"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionCreateEmptyProject">
+   <property name="text">
+    <string>Создать пустой проект</string>
+   </property>
+  </action>
+  <action name="actionOpenProject">
+   <property name="text">
+    <string>Открыть проект</string>
+   </property>
+  </action>
+  <action name="actionSaveCurrentProject">
+   <property name="text">
+    <string>Сохранить проект</string>
+   </property>
+  </action>
+  <action name="actionSaveAllOpenedProjects">
+   <property name="text">
+    <string>Сохранить все открытые проекты</string>
+   </property>
+  </action>
+  <action name="actionCloseCurrentProject">
+   <property name="text">
+    <string>Закрыть проект</string>
+   </property>
+  </action>
+  <action name="actionCloseAllOpenedProjects">
+   <property name="text">
+    <string>Закрыть все проекты</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="actionAddStructure">
+   <property name="text">
+    <string>Добавить структуру</string>
+   </property>
+  </action>
+  <action name="actionAddTrapToCurrentStructure">
+   <property name="text">
+    <string>Добавить ловушку к структуре</string>
+   </property>
+  </action>
+  <action name="actionRefreshStructureData">
+   <property name="text">
+    <string>Обновить данные структуры</string>
+   </property>
+  </action>
+  <action name="actionRefreshTrapData">
+   <property name="text">
+    <string>Обновить данные ловушки</string>
+   </property>
+  </action>
+  <action name="actionRemoveCurrentStructure">
+   <property name="text">
+    <string>Удалить выделенную структуру</string>
+   </property>
+  </action>
+  <action name="actionRemoveCurrentTrap">
+   <property name="text">
+    <string>Удалить выделенную ловушку</string>
+   </property>
+  </action>
+  <action name="actionEditWellsInProject">
+   <property name="text">
+    <string>Редактировать скважины проекта</string>
+   </property>
+  </action>
+  <action name="actionSaveCurrentProjectAs">
+   <property name="text">
+    <string>Сохранить проект как...</string>
+   </property>
+  </action>
+  <action name="actionBaseDataImport">
+   <property name="text">
+    <string>Импорт основной информации</string>
+   </property>
+  </action>
+  <action name="actionWellDataImport">
+   <property name="text">
+    <string>Импорт данных по рекомендуемым скважинам</string>
+   </property>
+  </action>
+  <action name="actionCurrentElementExprort">
+   <property name="text">
+    <string>Экспорт выбранного элемента</string>
+   </property>
+  </action>
+  <action name="actionRemoveCurrentStructureFromProject">
+   <property name="text">
+    <string>Удалить текущую структуру</string>
+   </property>
+  </action>
+  <action name="actionRemoveCurrentTrapFromProject">
+   <property name="text">
+    <string>Удалить текущую ловушку</string>
+   </property>
+  </action>
+  <action name="actionRemoveCurrentStratumFromProject">
+   <property name="text">
+    <string>Удалить текущий пласт</string>
+   </property>
+  </action>
+  <action name="actionRemoveCurrentWellFromProject">
+   <property name="text">
+    <string>Удалить текущую скважину</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
